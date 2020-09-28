@@ -26,14 +26,16 @@ export class _Blank extends React.Component {
 
   render = () => (
     <View style={this.props.themedStyle.View_1}>
-      <Image
-        resizeMode="cover"
-        source={{
-          uri:
-            "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/Recomended_Product_Banner.png"
-        }}
-        style={this.props.themedStyle.Image_15}
-      />
+      <View style={this.props.themedStyle.View_16}>
+        <Image
+          resizeMode="cover"
+          source={{
+            uri:
+              "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/Recomended_Product_Banner.png"
+          }}
+          style={this.props.themedStyle.Image_15}
+        />
+      </View>
     </View>
   )
 }
@@ -58,6 +60,38 @@ export default Blank = withStyles(_Blank, theme => ({
     flexWrap: "wrap",
     justifyContent: "flex-start",
     alignItems: "stretch",
+    alignContent: "stretch",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    backgroundSize: "auto"
+  },
+  View_16: {
+    width: 305,
+    height: 200,
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 10,
+    marginBottom: 10,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    flexDirection: "column",
+    flexWrap: "wrap",
+    justifyContent: "flex-start",
+    alignItems: "center",
     alignContent: "stretch",
     borderColor: "#000000",
     borderStyle: "solid",
